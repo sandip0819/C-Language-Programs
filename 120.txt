@@ -1,0 +1,54 @@
+120: The Art of Problem Solving
+
+Hello, Coding Wisdom! 👩‍💻👨‍💻
+
+Embark on a journey of problem-solving, where the code becomes a canvas and you, the artist! 🎨✨
+
+🔍 The Problem-Solving Mindset:
+1. Understand the Problem:
+   - Break it down into smaller parts.
+   - Clearly define the input, output, and constraints.
+
+2. Explore Strategies:
+   - Consider different approaches.
+   - Think about time and space complexity.
+
+3. Start with Pseudocode:
+   - Draft a high-level plan before diving into code.
+   - Ensure your logic aligns with the problem.
+
+🌐 Unique Code Challenge: Rotate Array Elements
+#include <stdio.h>
+
+void rotateArray(int arr[], int n, int k) {
+    for (int i = 0; i < k; i++) {
+        int temp = arr[0];
+        for (int j = 0; j < n - 1; j++) {
+            arr[j] = arr[j + 1];
+        }
+        arr[n - 1] = temp;
+    }
+}
+
+int main() {
+    int array[] = {1, 2, 3, 4, 5};
+    int n = sizeof(array) / sizeof(array[0]);
+    int k = 2;
+
+    rotateArray(array, n, k);
+
+    printf("Array after rotating %d times:\n", k);
+    for (int i = 0; i < n; i++) {
+        printf("%d ", array[i]);
+    }
+
+    return 0;
+}
+💡 Insight:
+Explore a unique solution to rotating array elements. Understand the logic and adapt it to different scenarios.
+
+💬 Join the Conversation 
+
+ Let's elevate our coding wisdom together! 🚀💬 #ProblemSolving #CodingWisdom #CodeChallenge
+
+https://t.me/NewWorldEra_Official
